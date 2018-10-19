@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 
 const PREFIX = ">";
-const TOKEN = "NTAyMjM1OTgwOTY3NzA2NjI0.DqlItw.6KKvg5hYBafXnRzO4W89If9Eg9M";
+const TOKEN = "NTAyMjUyNTU2MTgyMDkzODI3.DqtCKA.aPvqu1EI_LlQ7GXeJ6wJEPiXpws";
 
 var eightball = [
     "Yes ^^",
