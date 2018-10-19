@@ -1,7 +1,6 @@
 const Discord = require("discord.js");
 
 const PREFIX = ">";
-const TOKEN = "NTAyMjUyNTU2MTgyMDkzODI3.DqtCKA.aPvqu1EI_LlQ7GXeJ6wJEPiXpws";
 
 var eightball = [
     "Yes ^^",
@@ -73,6 +72,7 @@ bot.on("message", function(message) {
                 .addField("help-1", "Help for moderation commands.")
                 .addField("help-2", "Help for Fun commands")
                 .addField("help-3", "Help for other commands.")
+                .setThumbnail("https://imgur.com/Udn4GU5")
             message.channel.sendEmbed(embed);
             break;
         case "help-1":
@@ -219,4 +219,4 @@ bot.on("message", function(message) {
     }
 });
 
-bot.login(TOKEN);
+bot.login(process.env.BOT_TOKEN);
