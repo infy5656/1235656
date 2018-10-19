@@ -72,7 +72,7 @@ bot.on("message", function(message) {
                 .addField("help-1", "Help for moderation commands.")
                 .addField("help-2", "Help for Fun commands")
                 .addField("help-3", "Help for other commands.")
-                .setImage("https://imgur.com/Udn4GU5")
+                .setImage("https://imgur.com/Udn4GU5.png")
             message.channel.sendEmbed(embed);
             break;
         case "help-1":
