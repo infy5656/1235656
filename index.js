@@ -10,7 +10,6 @@ var eightball = [
 ];
 
 var hug = [
-    "https://giphy.com/gifs/love-sad-qscdhWs5o3yb6",
     "https://media.giphy.com/media/od5H3PmEG5EVq/giphy.gif",
     "https://media.giphy.com/media/svXXBgduBsJ1u/giphy.gif",
     "https://media.giphy.com/media/lrr9rHuoJOE0w/giphy.gif",
@@ -203,7 +202,7 @@ bot.on("message", function(message) {
             var embed = new Discord.RichEmbed()
                 .setColor("#3f1be5")
                 .setTitle("__**Invite the bot using this link!**__")
-                .addField("**Invite link**", "https://discordapp.com/oauth2/authorize?client_id=501630220260868106&scope=bot&permissions=2146958847")
+                .addField("**Invite link**", "https://discordapp.com/oauth2/authorize?client_id=502252556182093827&scope=bot&permissions=805365822")
             message.channel.sendEmbed(embed);
             break;
         case "server":
