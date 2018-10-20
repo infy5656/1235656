@@ -218,6 +218,7 @@ bot.on("message", function(message) {
             message.channel.bulkDelete(args[0]).then(() => {
               message.channel.send(`Cleared **${args[0]}** messages.`).then(msg => msg.delete(5000));
             }
+            break;
     default:
         message.channel.sendMessage(":interrobang: | ***Invalid Command***\n*Please check if you had any typo!*");
     }
