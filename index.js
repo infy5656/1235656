@@ -212,13 +212,6 @@ bot.on("message", function(message) {
                 .addField("**Invite link**", "https://discord.gg/zmptqQd")
             message.channel.sendEmbed(embed);
             break;
-        case "clear":
-            if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.reply(":interrobang: | ***Your Permission Missing***\nYou don't have permission to do that!"
-            if(!args[0]) return;
-            message.channel.bulkDelete(args[0]).then(() => {
-              message.channel.send(`Cleared **${args[0]}** messages.`).then(msg => msg.delete(5000));
-            }
-            break;
     default:
         message.channel.sendMessage(":interrobang: | ***Invalid Command***\n*Please check if you had any typo!*");
     }
