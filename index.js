@@ -67,7 +67,7 @@ bot.on("message", function(message) {
         case "help":
             var embed = new Discord.RichEmbed()
                 .setTitle("__**Help Terminal**__")
-                .setColor("#3f1be5")
+                .setColor("#d63220")
                 .addField("help-1", "Help for moderation commands.")
                 .addField("help-2", "Help for Fun commands")
                 .addField("help-3", "Help for other commands.")
@@ -77,7 +77,7 @@ bot.on("message", function(message) {
         case "help-1":
             var embed = new Discord.RichEmbed()
                 .setTitle("__**Moderation Commands**__")
-                .setColor("#3f1be5")
+                .setColor("#d63220")
                 .addField("**kick**", "Kicks the mentioned user. Need permission: `KICK_MEMBERS`.\n**Example Usage:** `>kick @user#0001`")
                 .addField("**ban**", "Bans the mentioned user. Need permission: `BAN_MEMBERS`.\n**Example Usage:** `>ban @user#0001`")
             message.channel.sendEmbed(embed);
@@ -85,7 +85,7 @@ bot.on("message", function(message) {
         case "help-2":
             var embed = new Discord.RichEmbed()
                 .setTitle("__**Fun Commands**__")
-                .setColor("#3f1be5")
+                .setColor("#d63220")
                 .addField("**hug**", "Sends the gif of hugging the mentioned user.\n**Example Usage:** `>hug @user#0001`")
                 .addField("**slap**", "Sends the gif of slapping the mentioned user.\n**Example Usage:** `>slap @user#0001`")
                 .addField("**kiss**", "Sends the gif of kissing the mentioned user.\n**Example Usage:** `>kiss @user#0001`")
@@ -96,7 +96,7 @@ bot.on("message", function(message) {
         case "help-3":
             var embed = new Discord.RichEmbed()
                 .setTitle("__**Other Commands**__")
-                .setColor("#3f1be5")
+                .setColor("#d63220")
                 .addField("**ping**", "Tells the ping latency.\n**Example Usage:** `>ping`")
                 .addField("**botinfo**", "Shows the bot info.\n**Example Usage:** `>botinfo`")
                 .addField("**invite**", "Gives you the invite link to invite the bot.\n**Example Usage:** `>botinfo`")
@@ -106,7 +106,7 @@ bot.on("message", function(message) {
         case "avatar":
             var embed = new Discord.RichEmbed()
                 .setTitle("**Bam**, your profile image!")
-                .setColor("#3f1be5")
+                .setColor("#d63220")
                 .setImage(message.author.avatarURL)
             message.channel.sendEmbed(embed);
             break;
@@ -139,7 +139,7 @@ bot.on("message", function(message) {
             break;
         case "botinfo":
             var embed = new Discord.RichEmbed()
-            .setColor("#3f1be5")
+            .setColor("#d63220")
             .setTitle("__**Bot Information**__")
             .addField("**Guilds**", `${bot.guilds.size}`)
             .addField("**Developer**", "infy#7333")
@@ -161,7 +161,7 @@ bot.on("message", function(message) {
             message.channel.send(":white_check_mark: ***Kicked the user successfully!***")
             const kickembed = new Discord.RichEmbed()
             .setAuthor(`${user.username}`, user.displayAvatarURL)
-            .setColor("#3f1be5")
+            .setColor("#d63220")
             .addField("__**Kick Information**__", `**Kicked user:** ${user.tag}\n**User kicked by:** ${message.author.tag}`);
             modlog.send({
                 embed : kickembed
@@ -182,7 +182,7 @@ bot.on("message", function(message) {
             message.channel.send(":white_check_mark: ***Banned the user successfully!***")
             const banembed = new Discord.RichEmbed()
             .setAuthor(`${buser.username}`, buser.displayAvatarURL)
-            .setColor("#3f1be5")
+            .setColor("#d63220")
             .addField("__**Ban Information**__", `**Banned user:** ${buser.tag}\n**User banned by:** ${message.author.tag}`);
             bmodlog.send({
                 embed : banembed
@@ -200,7 +200,7 @@ bot.on("message", function(message) {
             break;
         case "invite":
             var embed = new Discord.RichEmbed()
-                .setColor("#3f1be5")
+                .setColor("#d63220")
                 .setTitle("__**Invite the bot using this link!**__")
                 .addField("**Invite link**", "https://discordapp.com/oauth2/authorize?client_id=502252556182093827&scope=bot&permissions=805365822")
             message.channel.sendEmbed(embed);
