@@ -47,7 +47,7 @@ var bot = new Discord.Client();
 
 bot.on("ready", function() {
     console.log("I am ready!");
-    bot.user.setActivity(`${bot.guilds.size} servers | >help`, { type: 'WATCHING'});
+    bot.user.setActivity(`${bot.guilds.size} servers | >help | ${bot.users.size}` , { type: 'WATCHING'});
 });
 
 bot.on("message", function(message) {
