@@ -209,7 +209,7 @@ bot.on("message", function(message) {
             var embed = new Discord.RichEmbed()
                 .setColor("#3f1be5")
                 .setTitle("__**Join the bots support server!**__")
-                .addField("**Invite link**", "https://discord.gg/zmptqQd")
+                .addField("**Invite link**", "https://discord.gg/bSgcaS5")
             message.channel.sendEmbed(embed);
             break;
     default:
