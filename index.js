@@ -77,9 +77,9 @@ bot.on("message", function(message) {
             var embed = new Discord.RichEmbed()
                 .setTitle("__**Help Terminal**__")
                 .setColor("#d63220")
-                .addField("help1", "Help for moderation commands.")
-                .addField("help2", "Help for Fun commands")
-                .addField("help3", "Help for other commands.")
+                .addField("**Help 1**", "Help for moderation commands.\n*Example Usage:* `>help1`")
+                .addField("**Help 2**", "Help for fun commands.\n*Example Usage:* `>help2`")
+                .addField("**Help 3**", "Help for other commands.\n*Example Usage:* `>help3`")
                 .setImage("https://imgur.com/Udn4GU5.png")
             message.channel.sendEmbed(embed);
             break;
