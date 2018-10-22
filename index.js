@@ -142,7 +142,7 @@ bot.on("message", function(message) {
             .setColor("#d63220")
             .setTitle("__**Bot Information**__")
             .addField("**Guilds**", `${bot.guilds.size} servers`)
-            .addField"**Users**", `${bot.users.size} users`)
+            .addField("**Users**", `${bot.users.size} users`)
             .addField("**Developer**", "infy#7333")
             .addField("**Bot created on**", "2018/10/16")
             message.channel.sendEmbed(embed);
