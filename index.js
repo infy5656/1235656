@@ -112,6 +112,7 @@ bot.on("message", function(message) {
                 .addField("**invite**", "Gives you the invite link to invite the bot.\n**Example Usage:** `>invite`")
                 .addField("**server**", "Gives you the support server of SensitiveBot.\n**Example Usage:** `>server`")
                 .addField("**vote**", "Gives you the link to vote the bot!.\n**Example Usage:** `>vote`")
+                .addField("**donate**", "Gives you the link to donate the bot!.\n**Example Usage:** `>donate`")
             message.channel.sendEmbed(embed);
             break;
         case "avatar":
@@ -229,6 +230,13 @@ bot.on("message", function(message) {
                 .setColor("#d63220")
                 .setTitle("__**Go vote the bot now!**__")
                 .addField("**Vote Link**", "https://discordbots.org/bot/502252556182093827/vote")
+            message.channel.sendEmbed(embed);
+            break;
+        case "donate":
+            var embed = new Discord.RichEmbed()
+                .setColor("#d63220")
+                .setTitle("__**Go donate the bot now!**__")
+                .addField("**Donate Link**", "https://donatebot.io/checkout/503678640391979008")
             message.channel.sendEmbed(embed);
             break;
         case "bam":
