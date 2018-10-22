@@ -68,13 +68,13 @@ bot.on("message", function(message) {
             var embed = new Discord.RichEmbed()
                 .setTitle("__**Help Terminal**__")
                 .setColor("#d63220")
-                .addField("help-1", "Help for moderation commands.")
-                .addField("help-2", "Help for Fun commands")
-                .addField("help-3", "Help for other commands.")
+                .addField("help1", "Help for moderation commands.")
+                .addField("help2", "Help for Fun commands")
+                .addField("help3", "Help for other commands.")
                 .setImage("https://imgur.com/Udn4GU5.png")
             message.channel.sendEmbed(embed);
             break;
-        case "help-1":
+        case "help1":
             var embed = new Discord.RichEmbed()
                 .setTitle("__**Moderation Commands**__")
                 .setColor("#d63220")
@@ -82,7 +82,7 @@ bot.on("message", function(message) {
                 .addField("**ban**", "Bans the mentioned user. Need permission: `BAN_MEMBERS`.\n**Example Usage:** `>ban @user#0001`")
             message.channel.sendEmbed(embed);
             break;
-        case "help-2":
+        case "help2":
             var embed = new Discord.RichEmbed()
                 .setTitle("__**Fun Commands**__")
                 .setColor("#d63220")
@@ -93,7 +93,7 @@ bot.on("message", function(message) {
                 .addField("**avatar**", "Posts your profile image.\n**Example Usage:** `>avatar`")
             message.channel.sendEmbed(embed);
             break;
-        case "help-3":
+        case "help3":
             var embed = new Discord.RichEmbed()
                 .setTitle("__**Other Commands**__")
                 .setColor("#d63220")
@@ -141,7 +141,8 @@ bot.on("message", function(message) {
             var embed = new Discord.RichEmbed()
             .setColor("#d63220")
             .setTitle("__**Bot Information**__")
-            .addField("**Guilds**", `${bot.guilds.size}`)
+            .addField("**Guilds**", `${bot.guilds.size} servers`)
+            .addField"**Users**", `${bot.users.size} users`)
             .addField("**Developer**", "infy#7333")
             .addField("**Bot created on**", "2018/10/16")
             message.channel.sendEmbed(embed);
