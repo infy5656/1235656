@@ -20,6 +20,15 @@ var hug = [
     "https://media.giphy.com/media/yziFo5qYAOgY8/giphy.gif"
 ];
 
+var bam = [
+    "https://i.kym-cdn.com/photos/images/original/001/118/143/5ec.gif",
+    "https://media1.tenor.com/images/4b50b752de350a02965e75ea04ded3fc/tenor.gif",
+    "https://tenor.com/view/ban-banned-gif-8540518.gif",
+    "https://i.kym-cdn.com/photos/images/original/001/191/461/1fe.gif",
+    "https://thumbs.gfycat.com/ImpartialSecondIbis-max-1mb.gif",
+    "https://vignette.wikia.nocookie.net/diepio/images/9/9e/BanAbove.GIF/revision/latest?cb=20160920161137.gif"
+];
+
 var kiss = [
     "https://media.giphy.com/media/G3va31oEEnIkM/giphy.gif",
     "https://media.giphy.com/media/L3rumss7XR4QM/giphy.gif",
@@ -212,6 +221,16 @@ bot.on("message", function(message) {
                 .setTitle("__**Join the bots support server!**__")
                 .addField("**Invite link**", "https://discord.gg/bSgcaS5")
             message.channel.sendEmbed(embed);
+            break;
+        case "bam":
+            if(message.mentions.members.size == 1) {
+                let member = message.mentions.members.first()
+                message.channel.send(`${message.author} banned ${member} with their hammer!`, {
+                    file: bam[Math.floor(Math.random() * bam.length)]
+                });
+            } else {
+                message.channel.sendMessage(":interrobang: | ***Invalid Usage***\nYou forgot to mention the user you want to bam!")
+            }
             break;
     default:
         message.channel.sendMessage(":interrobang: | ***Invalid Command***\n*Please check if you had any typo!*");
