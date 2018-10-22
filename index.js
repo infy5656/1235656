@@ -109,7 +109,7 @@ bot.on("message", function(message) {
                 .addField("**ping**", "Tells the ping latency.\n**Example Usage:** `>ping`")
                 .addField("**botinfo**", "Shows the bot info.\n**Example Usage:** `>botinfo`")
                 .addField("**invite**", "Gives you the invite link to invite the bot.\n**Example Usage:** `>botinfo`")
-                .addField("**server**", "Gives you the support server of Syzygy.\n**Example Usage:** `>botinfo`")
+                .addField("**server**", "Gives you the support server of SensitiveBot.\n**Example Usage:** `>botinfo`")
             message.channel.sendEmbed(embed);
             break;
         case "avatar":
@@ -220,6 +220,13 @@ bot.on("message", function(message) {
                 .setColor("#3f1be5")
                 .setTitle("__**Join the bots support server!**__")
                 .addField("**Invite link**", "https://discord.gg/bSgcaS5")
+            message.channel.sendEmbed(embed);
+            break;
+        case "vote":
+            var embed = new Discord.RichEmbed()
+                .setColor("#3f1be5")
+                .setTitle("__**Go vote the bot now!**__")
+                .addField("**Vote Link**", "https://discordbots.org/bot/502252556182093827/vote")
             message.channel.sendEmbed(embed);
             break;
         case "bam":
