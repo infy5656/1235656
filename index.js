@@ -47,7 +47,7 @@ var bot = new Discord.Client();
 
 bot.on("ready", function() {
     console.log("I am ready!");
-    bot.user.setActivity(`>help | ${bot.users.size} users! | ${bot.guilds.size} servers`);
+    bot.user.setActivity(`>help | ${bot.users.size} users | ${bot.guilds.size} guilds`);
 });
 
 bot.on("message", function(message) {
