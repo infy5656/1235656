@@ -219,14 +219,14 @@ bot.on("message", function(message) {
             break;
         case "server":
             var embed = new Discord.RichEmbed()
-                .setColor("#3f1be5")
+                .setColor("#d63220")
                 .setTitle("__**Join the bots support server!**__")
                 .addField("**Invite link**", "https://discord.gg/bSgcaS5")
             message.channel.sendEmbed(embed);
             break;
         case "vote":
             var embed = new Discord.RichEmbed()
-                .setColor("#3f1be5")
+                .setColor("#d63220")
                 .setTitle("__**Go vote the bot now!**__")
                 .addField("**Vote Link**", "https://discordbots.org/bot/502252556182093827/vote")
             message.channel.sendEmbed(embed);
