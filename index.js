@@ -98,6 +98,7 @@ bot.on("message", function(message) {
                 .addField("**hug**", "Sends the gif of hugging the mentioned user.\n**Example Usage:** `>hug @user#0001`")
                 .addField("**slap**", "Sends the gif of slapping the mentioned user.\n**Example Usage:** `>slap @user#0001`")
                 .addField("**kiss**", "Sends the gif of kissing the mentioned user.\n**Example Usage:** `>kiss @user#0001`")
+                .addField("**bam**", "Sends the gif of banning the mentioned user with your hammer.\n**Example Usage:** `>bam @user#0001`")
                 .addField("**8ball**", "Normal 8ball command, ask the bot any questions!\n**Example Usage:** `>8ball <question>`")
                 .addField("**avatar**", "Posts your profile image.\n**Example Usage:** `>avatar`")
             message.channel.sendEmbed(embed);
@@ -108,8 +109,9 @@ bot.on("message", function(message) {
                 .setColor("#d63220")
                 .addField("**ping**", "Tells the ping latency.\n**Example Usage:** `>ping`")
                 .addField("**botinfo**", "Shows the bot info.\n**Example Usage:** `>botinfo`")
-                .addField("**invite**", "Gives you the invite link to invite the bot.\n**Example Usage:** `>botinfo`")
-                .addField("**server**", "Gives you the support server of SensitiveBot.\n**Example Usage:** `>botinfo`")
+                .addField("**invite**", "Gives you the invite link to invite the bot.\n**Example Usage:** `>invite`")
+                .addField("**server**", "Gives you the support server of SensitiveBot.\n**Example Usage:** `>server`")
+                .addField("**vote**", "Gives you the link to vote the bot!.\n**Example Usage:** `>vote`")
             message.channel.sendEmbed(embed);
             break;
         case "avatar":
