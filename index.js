@@ -1,5 +1,5 @@
 const Discord = require("discord.js");
-
+https://66.media.tumblr.com/870763f03b4f4feba3f0bf7a44b8d9f7/tumblr_njt4s7BxpX1unbsixo1_500.gif
 const PREFIX = ">";
 
 var eightball = [
@@ -18,6 +18,17 @@ var hug = [
     "https://media.giphy.com/media/8oeFgfmiSa4BG/giphy.gif",
     "https://media.giphy.com/media/pXQhWw2oHoPIs/giphy.gif",
     "https://media.giphy.com/media/yziFo5qYAOgY8/giphy.gif"
+];
+
+var feed = [
+    "https://66.media.tumblr.com/870763f03b4f4feba3f0bf7a44b8d9f7/tumblr_njt4s7BxpX1unbsixo1_500.gif",
+    "https://thumbs.gfycat.com/RawLightInvisiblerail-size_restricted.gif",
+    "https://media.indiedb.com/images/groups/1/1/84/kanzashi-eating.gif",
+    "https://media.tenor.com/images/54112765b2c1b359ffc5f55bd0661b93/tenor.gif",
+    "https://media1.tenor.com/images/187ff5bc3a5628b6906935232898c200/tenor.gif",
+    "https://i.imgur.com/1vC0R20.gif",
+    "https://i.makeagif.com/media/9-13-2015/gahRJw.gif",
+    "https://vignette.wikia.nocookie.net/animal-jam-clans-1/images/5/50/Tumblr_mwbflsTQoI1rkeknyo2_500.gif"
 ];
 
 var bam = [
@@ -245,6 +256,16 @@ bot.on("message", function(message) {
                 let member = message.mentions.members.first()
                 message.channel.send(`${message.author} banned ${member} with their hammer!`, {
                     file: bam[Math.floor(Math.random() * bam.length)]
+                });
+            } else {
+                message.channel.sendMessage(":interrobang: | ***Invalid Usage***\nYou forgot to mention the user you want to bam!")
+            }
+            break;
+        case "feed":
+            if(message.mentions.members.size == 1) {
+                let member = message.mentions.members.first()
+                message.channel.send(`${message.author} feeded ${member}!`, {
+                    file: feed[Math.floor(Math.random() * feed.length)]
                 });
             } else {
                 message.channel.sendMessage(":interrobang: | ***Invalid Usage***\nYou forgot to mention the user you want to bam!")
