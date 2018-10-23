@@ -268,7 +268,7 @@ bot.on("message", function(message) {
                     file: feed[Math.floor(Math.random() * feed.length)]
                 });
             } else {
-                message.channel.sendMessage(":interrobang: | ***Invalid Usage***\nYou forgot to mention the user you want to bam!")
+                message.channel.sendMessage(":interrobang: | ***Invalid Usage***\nYou forgot to mention the user you want to feed!")
             }
             break;
     default:
