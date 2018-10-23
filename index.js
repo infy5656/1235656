@@ -101,6 +101,7 @@ bot.on("message", function(message) {
                 .setColor("#d63220")
                 .addField("**kick**", "Kicks the mentioned user. Need permission: `KICK_MEMBERS`.\n**Example Usage:** `>kick @user#0001`")
                 .addField("**ban**", "Bans the mentioned user. Need permission: `BAN_MEMBERS`.\n**Example Usage:** `>ban @user#0001`")
+                .setFooter("Type >invite to invite the bot!")
             message.channel.sendEmbed(embed);
             break;
         case "help2":
@@ -108,11 +109,13 @@ bot.on("message", function(message) {
                 .setTitle("__**Fun Commands**__")
                 .setColor("#d63220")
                 .addField("**hug**", "Sends the gif of hugging the mentioned user.\n**Example Usage:** `>hug @user#0001`")
+                .addField("**feed**", "Sends the gif of feeding the mentioned user.\n**Example Usage:** `>feed @user#0001`")
                 .addField("**slap**", "Sends the gif of slapping the mentioned user.\n**Example Usage:** `>slap @user#0001`")
                 .addField("**kiss**", "Sends the gif of kissing the mentioned user.\n**Example Usage:** `>kiss @user#0001`")
                 .addField("**bam**", "Sends the gif of banning the mentioned user with your hammer.\n**Example Usage:** `>bam @user#0001`")
                 .addField("**8ball**", "Normal 8ball command, ask the bot any questions!\n**Example Usage:** `>8ball <question>`")
                 .addField("**avatar**", "Posts your profile image.\n**Example Usage:** `>avatar`")
+                .setFooter("Type >invite to invite the bot!")
             message.channel.sendEmbed(embed);
             break;
         case "help3":
@@ -125,6 +128,7 @@ bot.on("message", function(message) {
                 .addField("**server**", "Gives you the support server of SensitiveBot.\n**Example Usage:** `>server`")
                 .addField("**vote**", "Gives you the link to vote the bot!.\n**Example Usage:** `>vote`")
                 .addField("**donate**", "Gives you the link to donate the bot!.\n**Example Usage:** `>donate`")
+                .setFooter("Type >invite to invite the bot!")
             message.channel.sendEmbed(embed);
             break;
         case "avatar":
