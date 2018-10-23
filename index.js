@@ -81,7 +81,7 @@ bot.on("message", function(message) {
                 .addField("**Help 2**", "Help for fun commands.\n*Example Usage:* `>help2`")
                 .addField("**Help 3**", "Help for other commands.\n*Example Usage:* `>help3`")
                 .setImage("https://imgur.com/MCpozCx.png")
-                .setFooter("Please invite the bot by using this link: https://discordapp.com/oauth2/authorize?client_id=502252556182093827&scope=bot&permissions=805365822")
+                .setFooter(">invite | >vote | >donate | >server")
             message.channel.sendEmbed(embed);
             break;
         case "help1":
