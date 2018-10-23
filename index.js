@@ -81,7 +81,7 @@ bot.on("message", function(message) {
                 .addField("**Help 2**", "Help for fun commands.\n*Example Usage:* `>help2`")
                 .addField("**Help 3**", "Help for other commands.\n*Example Usage:* `>help3`")
                 .setImage("https://imgur.com/MCpozCx.png")
-                .setFooter("`invite | >vote | >donate | >server | Today at ${Date.now}`)
+                .setFooter(`invite | >vote | >donate | >server | Today at ${Date.now}`)
             message.channel.sendEmbed(embed);
             break;
         case "help1":
