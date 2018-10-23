@@ -264,7 +264,7 @@ bot.on("message", function(message) {
         case "feed":
             if(message.mentions.members.size == 1) {
                 let member = message.mentions.members.first()
-                message.channel.send(`${message.author} feeded ${member}!`, {
+                message.channel.send(`${message.author} feeded ${member} !`, {
                     file: feed[Math.floor(Math.random() * feed.length)]
                 });
             } else {
