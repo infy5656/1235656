@@ -1,5 +1,5 @@
 const Discord = require("discord.js");
-https://66.media.tumblr.com/870763f03b4f4feba3f0bf7a44b8d9f7/tumblr_njt4s7BxpX1unbsixo1_500.gif
+
 const PREFIX = ">";
 
 var eightball = [
@@ -264,7 +264,7 @@ bot.on("message", function(message) {
         case "feed":
             if(message.mentions.members.size == 1) {
                 let member = message.mentions.members.first()
-                message.channel.send(`${message.author} feeded ${member} !`, {
+                message.channel.send(`${message.author} feeded ${member}!`, {
                     file: feed[Math.floor(Math.random() * feed.length)]
                 });
             } else {
