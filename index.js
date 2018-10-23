@@ -161,7 +161,7 @@ bot.on("message", function(message) {
             message.channel.sendEmbed(embed);
             break;
         case "kick":
-            if(!message.guild.member(message.author).hasPermission("KICK_MEMBERS")) return message.reply(":interrobang: | **You are missing the following permission!\n`KICK_MEMBERS`");
+            if(!message.guild.member(message.author).hasPermission("KICK_MEMBERS")) return message.reply(":interrobang: | **You are missing the following permission!**\n`KICK_MEMBERS`");
             if(!message.guild.member(bot.user).hasPermission("KICK_MEMBERS")) return message.reply(":interrobang: | **I don't have the following permission!\n`KICK_MEMBERS`");
             let user = message.mentions.users.first();
             let modlog = bot.channels.find("name", "mod-logs");
@@ -182,7 +182,7 @@ bot.on("message", function(message) {
             });
             break;
         case "ban":
-            if(!message.guild.member(message.author).hasPermission("BAN_MEMBERS")) return message.reply(":interrobang: | **You are missing the following permission!\n`BAN_MEMBERS`");
+            if(!message.guild.member(message.author).hasPermission("BAN_MEMBERS")) return message.reply(":interrobang: | **You are missing the following permission!**\n`BAN_MEMBERS`");
             if(!message.member.hasPermission("BAN_MEMBERS")) return message.reply(":interrobang: | **I don't have the following permission!\n`BAN_MEMBERS`");
             let buser = message.mentions.users.first();
             let bmodlog = bot.channels.find("name", "mod-logs");
